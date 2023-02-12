@@ -29,6 +29,16 @@ scaler = PowerTransformer()
 # fit and transform the train set
 X[['year','engineSize','mileage']] = scaler.fit_transform(X[['year','engineSize','mileage']])
 
+'''
+- The PowerTransformer is used in this code to transform the features in the training data into a more Gaussian-like distribution. 
+- This is useful because many machine learning algorithms assume that the input features are normally distributed, which may not always be the case with raw data. 
+- The fit_transform method of the PowerTransformer fits the transformer to the training data and then applies the transformation to the data. The fit_transform 
+method is used here to normalize the year, engineSize, and mileage columns in the X dataframe. The fit_transform method returns the transformed data and 
+replaces the original data in the specified columns with the transformed data. It's worth noting that the PowerTransformer applies a power transformation 
+to the data, which can help stabilize the variance of the features and reduce skewness. By transforming the data into a more normal distribution, it can 
+improve the performance of machine learning algorithms that make assumptions about the distribution of the input data.
+
+'''
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 
