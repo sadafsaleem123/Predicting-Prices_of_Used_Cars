@@ -39,3 +39,10 @@ lr.fit(X_train, y_train)
 
 ### Finding the feature importance
 
+resultdict = {}
+for i in range(len(feature_cols)):
+    resultdict[feature_cols[i]] = lr.coef_[i]
+    
+plt.bar(resultdict.keys(),resultdict.values())
+plt.xticks(rotation='vertical')
+plt.title('Feature Importance in Linear Regression Model');
