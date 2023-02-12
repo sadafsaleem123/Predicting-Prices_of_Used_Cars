@@ -1,6 +1,6 @@
 ## 📝 Task List
 
-Your written report should include both code, output and written text summaries of the following:
+This is a written report that includes both code, output and written text summaries of the following:
 - Data Validation:   
   - Describe validation and cleaning steps for every column in the data 
 - Exploratory Analysis:  
@@ -17,4 +17,3 @@ Your written report should include both code, output and written text summaries 
   - Describe how your models perform using this approach
 - Final summary including recommendations that the business should undertake
 
-*Start writing report here..*
